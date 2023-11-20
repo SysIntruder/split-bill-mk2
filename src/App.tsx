@@ -74,8 +74,8 @@ const Header: React.FC = () => {
 
   return (
     <Row gutter={16} style={{ padding: '.5rem 0' }}>
-      <Col span={2} />
-      <Col span={6}>
+      <Col span={3} />
+      <Col span={5}>
         <Text strong>Item</Text>
         <Text type='danger' strong> *</Text>
       </Col>
@@ -129,7 +129,7 @@ const Items: React.FC = () => {
               {fields.map(({ key, name, ...restField }) => (
                   <>
                     <Row key={key} gutter={16} style={{ margin: '1rem 0' }}>
-                      <Col span={2}>
+                      <Col span={3}>
                         <Button
                           danger
                           type='primary'
@@ -141,7 +141,7 @@ const Items: React.FC = () => {
                           Delete Row
                         </Button>
                       </Col>
-                      <Col span={6}>
+                      <Col span={5}>
                         <Form.Item {...restField} name={[name, 'name']}>
                           <Input placeholder='Item Name' size='large' />
                         </Form.Item>
@@ -176,7 +176,7 @@ const Items: React.FC = () => {
         <Divider />
 
         <Row gutter={16} style={{ margin: '1rem 0' }}>
-          <Col span={2}>
+          <Col span={3}>
             <Form.Item>
               <Text strong>&nbsp;</Text>
               <Button
